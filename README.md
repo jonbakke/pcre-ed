@@ -15,7 +15,7 @@ Wanting to implement the feature, I found the POSIX-ish wrapper for PCRE2, and t
 
 PCRE2 regex forms are better, though, as one would expect. \\s is nicer than [[:blank:]], for instance.
 
-## Why ed?
+## Why `ed`?
 Three reasons, for now, for me:
 
 Some people like vi because its command structure helps you move the cursor to the text you want to edit. Yes, it is better than holding down an arrow. However, ed doesn't even have a concept of "cursor" or "point," just "current line." I suspect using regular expressions to find the code I want to change will be even faster.
