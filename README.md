@@ -6,8 +6,12 @@ This script will:
 1. patch, configure, build that source, and
 1. copy the ed binary to a pcre-ed executable in the working directory.
 
+I suspect most folks who are interested in this will learn all they need to know from reading the script.
+
 ## Why PCRE?
-This project began after I read the manual page for macOS/BSD `ed` and wanted to use the word designators \\< and \\>. However, while these work on a GNU platform like my Debian box, it does not work on macOS because the regex library does not support that enhanced feature, GNU ed documentation notwithstanding.
+This project began after I read the manual page for `ed` and wanted to use the word designators \\< and \\>. The mac/BSD `ed` manual page suggests that these might not be available. The GNU `info` manual clearly implies that they are. However, while these work on a GNU platform like my Debian box, it does not work on macOS, even with GNU `ed`, because the regex library does not support that enhanced feature.
+
+Wanting to implement the feature, I found the POSIX-ish wrapper for PCRE2, and the rest of the story is even more boring.
 
 PCRE2 regex forms are better, though, as one would expect. \\s is nicer than [[:blank:]], for instance.
 
