@@ -18,7 +18,7 @@ PCRE2 regex forms are better, though, as one would expect. \\s is nicer than [[:
 ## Why `ed`?
 Three reasons, for now, for me:
 
-Some people like vi because its command structure helps you move the cursor to the text you want to edit. Yes, it is better than holding down an arrow. However, ed doesn't even have a concept of "cursor" or "point," just "current line." I suspect using regular expressions to find the code I want to change will be even faster.
+Some people like `vi` because its command structure helps you move the cursor to the text you want to edit. Yes, it is better than holding down an arrow. However, `ed` doesn't even have a concept of "cursor" or "point," just "current line." I suspect using regular expressions to find the code I want to change will be even faster.
 
 More importantly than speed, however, is mental focus. When I'm moving around in `ed`, I'm always thinking about the structure of the code. When I'm moving around in Xcode, I'm always thinking about the color and shape of the characters that represent the code. Surely, I will continue to use Xcode's autocomplete features when I'm working with Cocoa. But perhaps this experiment with `ed` will help me better grok the bases I'm trying to contribute to.
 
